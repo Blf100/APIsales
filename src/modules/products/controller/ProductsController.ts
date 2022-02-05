@@ -5,7 +5,7 @@ import { ListProductsService } from '../services/ListProductsService';
 import { ShowProductService } from '../services/ShowProductService';
 import { UpdateProductService } from '../services/UpdateProductService';
 
-class ProductContoller {
+class ProductsContoller {
   public async index(request: Request, response: Response): Promise<Response> {
     const listProducts = new ListProductsService();
 
@@ -65,4 +65,4 @@ class ProductContoller {
   }
 }
 
-export { ProductContoller };
+export { ProductsContoller };
