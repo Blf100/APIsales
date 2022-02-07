@@ -30,9 +30,11 @@ class UpdateProductService {
       throw new AppError('This product already exists');
     }
 
-    product.name = name;
-    product.price = price;
-    product.quantity = quantity;
+    Object.assign(product, {
+      name,
+      price,
+      quantity,
+    });
 
     await productRepository.save(product);
 
