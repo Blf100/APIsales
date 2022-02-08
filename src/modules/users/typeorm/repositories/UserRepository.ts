@@ -34,4 +34,4 @@ export class UsersRepository extends Repository<User> {
   }
 }
 
-export default UsersRepository;
+export { UsersRepository };
